@@ -1,0 +1,421 @@
+@charset "UTF-8";
+
+/*
+ * scrollbar
+ */
+::-webkit-scrollbar{width:17px;height:17px;background-color:#f0f0f0;border:none}::-webkit-scrollbar:disabled{background-color:#f9f9f9}::-webkit-scrollbar-thumb{background-color:#cdcdcd;border:1px solid #f0f0f0}::-webkit-scrollbar-thumb:hover{background-color:#dadada}::-webkit-scrollbar-thumb:active{background-color:#606060}::-webkit-scrollbar-thumb:disabled{background-color:#f9f9f9}::-webkit-scrollbar-corner{background-color:#f0f0f0}::-webkit-scrollbar-button{background-color:#f0f0f0;background-image:url(../img/controls.png);background-repeat:no-repeat}::-webkit-scrollbar-button:vertical{height:33px}::-webkit-scrollbar-button:horizontal{width:33px}::-webkit-scrollbar-button:horizontal:increment{background-position:0 -444px}::-webkit-scrollbar-button:horizontal:decrement{background-position:12px -425px}::-webkit-scrollbar-button:vertical:increment{background-position:-1px -391px}::-webkit-scrollbar-button:vertical:decrement{background-position:-1px -358px}::-webkit-scrollbar-button:hover{background-color:#dadada}::-webkit-scrollbar-button:horizontal:increment:hover{background-position:0 -548px}::-webkit-scrollbar-button:horizontal:decrement:hover{background-position:12px -529px}::-webkit-scrollbar-button:vertical:increment:hover{background-position:-1px -495px}::-webkit-scrollbar-button:vertical:decrement:hover{background-position:-1px -462px}::-webkit-scrollbar-button:active{background-color:#606060}::-webkit-scrollbar-button:horizontal:increment:active{background-position:0 -652px}::-webkit-scrollbar-button:horizontal:decrement:active{background-position:12px -633px}::-webkit-scrollbar-button:vertical:increment:active{background-position:-1px -599px}::-webkit-scrollbar-button:vertical:decrement:active{background-position:-1px -566px}::-webkit-scrollbar-button:disabled{background-color:#f9f9f9}::-webkit-scrollbar-button:horizontal:increment:disabled{background-position:0 -756px}::-webkit-scrollbar-button:horizontal:decrement:disabled{background-position:12px -737px}::-webkit-scrollbar-button:vertical:increment:disabled{background-position:-1px -703px}::-webkit-scrollbar-button:vertical:decrement:disabled{background-position:-1px -670px}
+
+
+/*
+ * Fuente : Segoe UI
+ */
+.box-body html, body{
+  font:400 14px / 20px 'Segoe UI', Tahoma, sans-serif;
+}
+.box-body h1,h2,h3,h4,h5,h6{
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+.box-body .uk-navbar-nav>li>a{
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body{
+  background-color: #F5F5F5;
+  background-position: 50% 50%;
+  background-repeat: repeat;
+  -webkit-background-size: cover;           /* Safari 3.0 */
+     -moz-background-size: cover;           /* Gecko 1.9.2 (Firefox 3.6) */
+       -o-background-size: cover;           /* Opera 9.5 */
+          background-size: cover;           /* Gecko 2.0 (Firefox 4.0) and other CSS3-compliant browsers */
+          overflow-x: hidden;
+}
+
+.box-container{
+    border: 1px solid #e5e5e5;
+    background-color: #FFF;
+    min-height: 260px;
+    height:100%;
+}
+
+.box-container { padding: 10px 15px; }
+.box-section, .box-footer { padding: 22px 5px; }
+
+/* Tablet and bigger */
+@media (min-width: 768px) {
+    
+
+    .box-container { padding: 20px 25px; }
+    .box-section, .box-footer { padding: 45px 10px ; }
+
+}
+
+/* Large screen and bigger */
+@media (min-width: 1220px) {
+
+    .box-container { padding: 40px 35px; }
+    .box-section, .box-footer { padding: 90px 20px; }
+
+}
+
+/* Tablet and bigger */
+@media (min-width: 768px) {
+
+    .box-sidebar {
+        margin-right: -1px !important;
+        border-right: 1px solid #E5E5E5;
+    }
+
+    .box-main {
+        padding-left: 50px !important;
+        border-left: 1px solid #E5E5E5;
+    }
+
+    .box-sidebar .uk-panel { padding-right: 20px; }
+
+}
+
+.box-middle .uk-nav-header{
+  font-weight: bold !important;
+}
+/*
+ * Navbar
+ */
+
+.box-navbar {
+    padding: 15px 0;
+    border: none;
+}
+
+.box-navbar .uk-navbar-content,
+.box-navbar .uk-navbar-brand,
+.box-navbar .uk-navbar-toggle {
+    height: 40px;
+    margin-top: 0;
+    text-shadow: none;
+}
+
+.box-navbar .uk-navbar-nav > li > a {
+    height: 40px;
+    margin: 0;
+    border: none;
+    border-radius: 3px !important;
+    text-shadow: none;
+    font-size: 15px;
+}
+
+.box-navbar .uk-navbar-nav > li { margin-left: 20px; }
+
+/* Hover */
+.box-navbar .uk-navbar-nav > li:hover > a,
+.box-navbar .uk-navbar-nav > li > a:focus,
+.box-navbar .uk-navbar-nav > li.uk-open > a {
+    border: none;
+    color: #333;
+}
+
+/* Active */
+.box-navbar .uk-navbar-nav > li.uk-active > a {
+    background-color: #2BA3D4;
+    color: #333;
+}
+
+/* OnClick */
+.box-navbar .uk-navbar-nav > li > a:active { background-color: transparent; }
+
+/*
+ * Nav
+ */
+
+.box-nav > li > a { color: #777; }
+
+/* Hover */
+.box-nav > li > a:hover,
+.box-nav > li > a:focus,
+.box-nav > li.uk-active > a  {
+    background: #F5F5F5;
+    color: #444;
+}
+
+/* Sub-object: `nav-header` */
+.box-nav .uk-nav-header {
+    color: #222;
+    font-weight: normal;
+}
+
+/*
+ * Nav
+ */
+
+.box-subnav > li:nth-child(n+2) { margin-left: 20px; }
+
+
+.box-navbar-nav{
+  background-color: #f5f5f5 !important;
+}
+
+.box-navbar-nav .box-nav-icon{
+  padding-top: 3px;
+}
+
+.box-navbar-nav img{
+  vertical-align: middle !important;
+  margin-top: -10px;
+}
+
+.box-navbar-nav {  
+  padding: 15px 0;
+  width: 100%;
+  border-radius: 0px !important;
+}
+
+.box-navbar-nav > li > a {
+  /* 1 */
+  padding: 15px 0;
+}
+
+
+.box-navbar-nav .uk-dropdown-navbar {
+  margin-top: 20px !important;
+}
+
+
+
+
+
+/* Sub-object: `uk-navbar-nav`
+ ========================================================================== */
+.box-navbar-nav{
+  border-top: 3px solid #0099CC !important;
+  background-color: rgba(65,65,65, 1.0) !important;
+  background-image: none !important;
+}
+
+
+.box-navbar-nav .uk-navbar-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: left;
+}
+/*
+ * 1. Create position context for dropdowns
+ */
+.box-navbar-nav .uk-navbar-nav > li {
+  float: left;
+  /* 1 */
+  position: relative;
+
+
+}
+/*
+ * 1. Dimensions
+ * 2. Style
+ */
+.box-navbar-nav .uk-navbar-nav > li > a {
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
+  /* 1 */
+  /* 2 */
+  color: #FFF;
+  font-size: 14px;
+  font-weight: normal;
+  margin-top: -1px;
+  margin-left: -1px;
+  border: 1px solid transparent;
+  border-bottom-width: 0;
+  text-shadow: 0 1px 0 #777;
+}
+/* Appear not as link */
+.box-navbar-nav .uk-navbar-nav > li > a[href='#'] {
+  cursor: pointer;
+}
+/*
+ * Hover
+ * 1. Apply hover style also to focus state
+ * 2. Also apply if dropdown is opened
+ * 3. Remove default focus style
+ */
+.box-navbar-nav .uk-navbar-nav > li:hover > a,
+.box-navbar-nav .uk-navbar-nav > li > a:focus,
+.box-navbar-nav .uk-navbar-nav > li.uk-open > a {
+  background-color: #333;
+  color: #FFF !important;  
+  /* 3 */
+
+  height: 70px !important;
+    padding: 15px 15px !important;
+    margin-top: -15px !important;
+    margin-bottom: -15px !important;
+}
+/* OnClick */
+.box-navbar-nav .uk-navbar-nav > li > a:active {
+  background-color: #0099CC;
+  color: #FFF !important;
+
+  height: 70px !important;
+    padding: 15px 15px !important;
+    margin-top: -15px !important;
+    margin-bottom: -15px !important;
+}
+/* Active */
+.box-navbar-nav .uk-navbar-nav > li.uk-active > a {
+  background-color: #0099CC;
+  color: #f5f5f5;
+
+
+  height: 70px !important;
+    padding: 15px 15px !important;
+    margin-top: -15px !important;
+    margin-bottom: -15px !important;
+}
+/* Sub-objects: `uk-navbar-nav-subtitle`
+ ========================================================================== */
+.box-navbar-nav .uk-navbar-nav .uk-navbar-nav-subtitle {
+  line-height: 28px;
+}
+.box-navbar-nav .uk-navbar-nav-subtitle > div {
+  margin-top: -6px;
+  font-size: 10px;
+  line-height: 12px;
+}
+
+/*
+ * Footer
+ */
+.box-footer{
+
+  bottom:0;
+  left:0;
+  width:100%;
+
+  background-color: #333 !important;
+  box-shadow: inset 0 5px 15px 0 #292929;
+
+}
+.box-footer .uk-subnav-line > li:before { border-color: #333 !important; }
+.box-footer .uk-subnav-line { font-size: 18px !important;}
+
+.box-footer, .box-footer a { color: #ddd !important; }
+.box-footer a:hover { color: #fff !important; }
+
+
+/*
+
+
+
+ */
+
+
+.box-block {
+    overflow: hidden;
+    padding: 40px 0;
+    background: #fff;
+}
+@media (min-width:768px) {
+      .box-block {
+      padding: 70px 0;
+  }
+}
+@media (min-width:960px) {
+      .box-block: not(.box-block-dark) {
+      padding: 100px 0;
+  }
+}
+.box-block-teaser h1{
+  color: #f5f5f5;
+}
+.box-block-teaser p{
+  color: #f5f5f5;
+}
+.box-block-teaser {
+    background: #4c4442 url(../img/michelle_lewin_03.jpg) 50% 50% no-repeat;
+    background-size: cover;
+}
+@media (min-width:1201px) {
+  .box-block-teaser {
+    background-image: url(../img/michelle_lewin_03.jpg);
+  }
+}
+
+.box-block-light {
+    background: #f9f9f9;
+}
+.box-block-dark {
+    background: #222;
+}
+.box-block-darker {
+    background: #111;
+}
+.box-block-primary {
+    background: #4aa7e6;
+    background: -webkit-linear-gradient(-45deg, #4aa7e6 0, #2a93cb 100%);
+    background: linear-gradient(135deg, #4aa7e6 0, #2a93cb 100%);
+    color: #fff;
+}
+.box-block-dark, .box-block-darker {
+    color: #999;
+}
+.box-block-dark a:not([class]), .box-block-darker a:not([class]) {
+    color: #ccc!important;
+}
+.box-block-dark a:hover:not([class]), .box-block-darker a:hover:not([class]) {
+    color: #fff!important;
+}
+
+.section_1 h1{
+  font-size: 6em;
+  text-shadow: 1px 6px 15px rgba(65,65,65, 1);
+}
+
+.box-navbar {
+    border-bottom: 1px solid #e5e5e5;
+    background: #fafafa;
+}
+.box-navbar-transparent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.box-navbar-transparent:not(.uk-active) {
+    border-bottom: 0;
+    background-color: rgba(65,65,65, 0.39);
+}
+.box-navbar-transparent:not(.uk-active) .uk-navbar {
+    background-color: #fafafa;
+    color: #fff;
+}
+.box-navbar-transparent:not(.uk-active) .uk-navbar-nav>li>a {
+    color: rgba(255, 255, 255, 0.8);
+}
+.box-navbar-transparent:not(.uk-active) .uk-navbar-nav>li:hover>a, .box-navbar-transparent:not(.uk-active) .uk-navbar-nav>li>a:focus, .box-navbar-transparent:not(.uk-active) .uk-navbar-nav>li.uk-open>a {
+    background-color: transparent;
+    color: #FFF;
+}
+.box-navbar-transparent:not(.uk-active) .uk-navbar-nav>li>a:active {
+    background-color: transparent;
+    color: #FFF;
+}
+.box-navbar-transparent:not(.uk-active) .uk-navbar-nav>li.uk-active>a {
+    background-color: transparent;
+    color: #FFF;
+}
+.box-navbar-transparent:not(.uk-active) .uk-navbar-toggle, .box-navbar-transparent:not(.uk-active) .uk-navbar-toggle:hover, .box-navbar-transparent:not(.uk-active) .uk-navbar-toggle:focus {
+    color: #fff;
+}
+
+#quienes_somos{
+  padding: 20vh 10vw;
+}
+
+#mercados{
+  padding: 25vh 10vw;
+}
+#que_ofrecemos h1{
+  color: rgba(255, 255, 255, 0.8);
+}
+#que_ofrecemos{
+  padding: 11vh 10vw;
+}
